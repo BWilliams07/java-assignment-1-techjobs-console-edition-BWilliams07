@@ -42,7 +42,6 @@ public class TechJobs {
                 }
 
             } else {
-
                 String searchField = getUserSelection("Search by:", columnChoices);
 
                 System.out.println("\nSearch term: ");
@@ -74,6 +73,7 @@ public class TechJobs {
 
             System.out.println("\n" + menuHeader);
 
+
             for (int j = 0; j < choiceKeys.length; j++) {
                 System.out.println("" + j + " - " + choices.get(choiceKeys[j]));
             }
@@ -92,6 +92,7 @@ public class TechJobs {
         return choiceKeys[choiceIdx];
     }
 
+
     private static void printJobs(ArrayList<HashMap<String, String>> someJobs) {
 
         if (someJobs.size() > 0 ) {
@@ -108,7 +109,6 @@ public class TechJobs {
 
         } else System.out.println("Sorry there is nothing that matches your search");
     }
-
     
     public static ArrayList<HashMap<String, String>> findByValue(String searchTerm){
         ArrayList<HashMap<String, String>> allJobs = JobData.findAll();
